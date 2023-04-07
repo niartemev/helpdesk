@@ -1,2 +1,2 @@
-This is my administration interface for 365 
-Only about 8% done 
+This is my administration interface for 365 that I started recently
+
