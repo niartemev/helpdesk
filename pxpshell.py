@@ -47,9 +47,9 @@ if __name__ == "__main__":
     #Quick demo
     x = pxpowershell()
     x.start_process()
-    result = x.run("Connect-ExchangeOnline -CertificateThumbPrint '' -AppID '' -Organization 'thelastoneleft.us'")
+    result = x.run("Connect-ExchangeOnline -CertificateThumbPrint 'DB86D49593A711E8E0320EDC22124688B4AE2D1C' -AppID '4cc74730-5cb1-4a55-9557-e3d0b1e793ab' -Organization 'thelastoneleft.us'")
     print(result.decode())
-    result = x.run("Add-MailboxPermission -Identity '' -User '' -AccessRights FullAccess -InheritanceType All")
+    result = x.run("Add-MailboxPermission -Identity 'AdeleV@0tkwt.onmicrosoft.com' -User 'testadmin@thelastoneleft.us' -AccessRights FullAccess -InheritanceType All")
     print(result.decode())
     x.stop_process()
 
